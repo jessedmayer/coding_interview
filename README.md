@@ -1,3 +1,9 @@
+# Instruction to Run
+If the json gem has not been installed locally run:
+    
+gem install json
+
+
 # Background
 
 Most calendar applications provide some kind of "meet with" feature where the user
