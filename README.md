@@ -3,6 +3,21 @@ If the json gem has not been installed locally run:
     
 gem install json
 
+Run with: ruby availability.rb Maggie,Joe,Jordan
+
+May need to set the working directory for JSON files to be found at runtime
+
+If the selected users do not have any availability within the given time range,
+then the program will output: "No times currently available"
+
+The time period can be changed by changing the value of days on line 50
+
+# Approach
+The program begins by parsing the JSON data and selecting the users as arguments at runtime.
+The schedules that correspond to these users are then selected and sorted by ascending start_time.
+Next overlapping user schedules are merged. The gap periods between the merged schedules along with
+the beginning and end of each day is then used to determine the availability of the users. Finally 
+the availability is output as a time range in the format listed in the instructions section below.
 
 # Background
 
